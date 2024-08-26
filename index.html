@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu decodificador de texto - Desafio Oracle One/Alura</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+    <!--Início do cabeçalho-->
+    <header>
+        <img src="images/imgalura.png" alt="Alura">
+    </header>
+
+
+    <!--Início da área principal-->
+    <main>
+
+        <textarea id="digitarTexto" placeholder="Digite seu texto" rows="10" cols="33"></textarea>
+        
+        <div class="atencao">
+            <img src="images/bi_exclamation-circle-fill.png" alt="Atenção">
+            <p>Apenas letras minúsculas e sem acento.</p>
+        </div>
+        
+        <div class="buttons">
+            <button id="buttoncripto" onclick="codificar()">Criptografar</button>
+            <button id="buttondescripto" onclick="decodificar()">Descriptografar</button>
+        </div>
+    </main>
+
+        <div class="traducao">
+            <div class="traducaoimg">
+            <img src="images/High quality products 1 1.svg" alt="Procurando texto">
+            </div>
+            <div class="traducaotexto">
+            <p class="naoencontrada">Nenhuma mensagem encontrada</p>
+            <p class="digitetexto">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <div class="copiarresultado" style="display: none;">
+            <button id="botaocopiar" onclick="copiar()">Copiar</button>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
